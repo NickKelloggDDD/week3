@@ -10,18 +10,27 @@
 // Store a simple social media profile in memory
 //let profile = { name: `Brian`, location: `Chicago`}
 let profile = {
-    name: `Brian`
-    location: `Chicago`
+    name: `Brian`,
+    location: {city: `Chicago`, state: `Illinois`},
+    timeline: [`Teaching`, `Eating`, `Unicorn`]
 }
 console.log(profile)
 
 // Retrieve the name from the profile, store it in memory
 let profileName = profile.name
+
 // Display the name in the console
+console.log(`Name: ${profileName}`)
 
 // Retrieve the location, store it in a memory
+//let profileLocation = profile.location
 
 // Use the location to write the city and state, in a human-readable
 // format, to the JavaScript console
+//console.log(`Location: ${profileLocation}`)
+console.log(`Location: ${profile.location.city}, ${profile.location.state}`)
 
 // Write the 3 statuses from the "timeline" to the JavaScript console
+console.log(`Timeline`)
+console.log(profile.timeline[0])
+console.log(profile.timeline[1])
